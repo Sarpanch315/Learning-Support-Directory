@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { fetchProviderById } from '../utils/fetchProviders';
+import { fetchProviderById } from '../utils/fetchproviders';
 
 function ProviderDetail() {
   const { id } = useParams();

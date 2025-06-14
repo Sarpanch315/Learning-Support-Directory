@@ -1,20 +1,18 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { fetchProviders } from '../utils/fetchProviders';
+import { useProviderContext } from '../context/ProviderContext';
 import ProviderCard from '../components/ProviderCard';
 
 function ProviderList() {
-  const [providers, setProviders] = useState([]);
+  const { providers, loading } = useProviderContext();
   const [search, setSearch] = useState('');
-
-  useEffect(() => {
-    fetchProviders().then(setProviders);
-  }, []);
 
   const filtered = providers.filter(p =>
     p.name.toLowerCase().includes(search.toLowerCase()) ||
     p.specialization.toLowerCase().includes(search.toLowerCase())
   );
+
+  if (loading) return <p>Loading providers...</p>;
 
   return (
     <div className="max-w-4xl mx-auto">
