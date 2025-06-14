@@ -1,12 +1,52 @@
-# React + Vite
+# Learning Support Provider Directory
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple, responsive React application that helps parents find and explore learning support providers for children with learning difficulties. This project simulates an API and showcases a searchable, filterable list and detailed view of support providers.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 📄 Provider Listing Page with search and filter
+- 🔍 Provider Detail View with full information
+- 📱 Fully responsive design using Tailwind CSS
+- 📦 Simulated API call using local JSON data
+- 🚀 React with functional components and Hooks
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📁 Project Structure
+
+src/
+│
+├── components/ # Reusable components (e.g., ProviderCard, SearchBar)
+├── pages/ # Route pages (Listing, Detail)
+├── data/ # Simulated API data (data.json)
+├── App.jsx # App component with routes
+└── main.jsx # Entry point
+---
+
+## 🧰 Tech Stack
+
+- React (with Hooks)
+- React Router DOM
+- Tailwind CSS
+- JavaScript (ES6+)
+- Vite
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+git clone https://github.com/yourusername/learning-support-directory.git
+cd learning-support-directory
+2. Install dependencies
+bash
+Copy
+Edit
+npm install
+3. Run the app locally
+bash
+Copy
+Edit
+npm run dev
+Visit http://localhost:5173 to view the app in your browser.
+
